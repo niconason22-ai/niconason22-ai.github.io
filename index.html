@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas Nason - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #1e3c72;
+            border-bottom: 3px solid #2a5298;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            color: #2a5298;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+
+        .job-title {
+            font-style: italic;
+            color: #555;
+        }
+
+        .job-date {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .education-info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .course-list {
+            color: #555;
+            font-style: italic;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-category {
+            background: #f9f9f9;
+            padding: 1rem;
+            border-radius: 5px;
+            border-left: 4px solid #2a5298;
+        }
+
+        .skill-category h4 {
+            color: #1e3c72;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #1e3c72;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        .activity {
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .job-header {
+                flex-direction: column;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nicholas Nason</h1>
+        <p>Business Analytics Student | Strategy & Data Analysis</p>
+    </header>
+
+    <div class="container">
+        <section id="education">
+            <h2>Education</h2>
+            <h3>Stonehill College - Easton, MA</h3>
+            <div class="education-info">
+                <div>
+                    <p><strong>Bachelor of Science in Business Administration</strong></p>
+                    <p>Major: Business Analytics | Minor: Spanish</p>
+                    <p>GPA: 3.63</p>
+                </div>
+                <div>
+                    <p><strong>Expected Graduation:</strong> May 2026</p>
+                </div>
+            </div>
+            <p class="course-list"><strong>Relevant Coursework:</strong> Quantitative Analysis, Data Management Using SQL, Python for Business Analytics, SAS for Business Analytics, Corporate Finance</p>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <h3>ADUSA Strategy</h3>
+                    <span class="job-date">May 2025 - 2025</span>
+                </div>
+                <p class="job-title">Strategy Intern | Scarborough, ME</p>
+                <ul>
+                    <li>Produced strategic financial intelligence analyses examining microeconomic trends, consumer behavior, competitive strategies, and companies' financial performance.</li>
+                    <li>Contributed to competitive intelligence reports by developing insights and recommendations to leadership.</li>
+                    <li>Assisted supply chain sustainability efforts through renewable energy market analysis and recommendations based on findings.</li>
+                    <li>Created bi-weekly reports on competitor and retail industry trends across six key focus areas.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <h3>ADUSA Procurement</h3>
+                    <span class="job-date">May 2024 - 2024</span>
+                </div>
+                <p class="job-title">Supply Chain Intern - Demand Management | Scarborough, ME</p>
+                <ul>
+                    <li>Supported the creation of an item scorecard to increase focus on problematic forecast items.</li>
+                    <li>Reviewed store-level forecasts to improve forecast accuracy.</li>
+                    <li>Root cause investigation and corrective actions using Relex systems software by adjusting forecast models and master data.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <h3>Hannaford</h3>
+                    <span class="job-date">June 2022 - 2024</span>
+                </div>
+                <p class="job-title">Associate | Yarmouth, ME</p>
+                <ul>
+                    <li>Worked as a bagger, cashier, and service desk employee (monitoring the self-checkout machines).</li>
+                    <li>Served as an initial trainer for multiple new hires.</li>
+                    <li>Handled complex interactions with customers, delivered exemplary service, resulting in employer recognition certificates.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <h3>Portside Learning Center</h3>
+                    <span class="job-date">July 2019 - 2023</span>
+                </div>
+                <p class="job-title">Teacher's Assistant | Portland, ME</p>
+                <ul>
+                    <li>Monitored and interacted with a classroom of 30, ranging in age from toddlers to young children.</li>
+                    <li>Helped prepare and brainstorm innovative activities to help advance the students' learning.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <h3>Self-Employed</h3>
+                    <span class="job-date">January 2018 - 2023</span>
+                </div>
+                <p class="job-title">Self-Proprietor | Cumberland, ME</p>
+                <ul>
+                    <li>Completed jobs including shoveling, painting, weeding, etc.</li>
+                    <li>Expanded the business to accommodate 19 clients through many services offered.</li>
+                    <li>Oversaw two children as a full-time nanny during the summer of 2019.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="activities">
+            <h2>Collegiate Activities</h2>
+            
+            <div class="activity">
+                <h3>FinTech Club - Secretary</h3>
+                <p class="job-date">August 2024 - Present</p>
+                <ul>
+                    <li>Manage club communications, maintain member databases, track attendance, and oversee the event calendar.</li>
+                    <li>Participate in a Fintech club, engaging in case studies, educational workshops, and company visits around Boston to deepen knowledge of financial technologies.</li>
+                </ul>
+            </div>
+
+            <div class="activity">
+                <h3>Stonehill Men's Collegiate Lacrosse - Captain</h3>
+                <p class="job-date">November 2022 - Present</p>
+                <ul>
+                    <li>Facilitate team transportation, lead practice drills, assist with game setup, and support in communicating scheduling.</li>
+                </ul>
+            </div>
+
+            <div class="activity">
+                <h3>Financial Management Association - Member</h3>
+                <p class="job-date">August 2022 - Present</p>
+                <ul>
+                    <li>Focused on improving understanding of financial research and practices to enhance the quality of education in finance.</li>
+                </ul>
+            </div>
+
+            <div class="activity">
+                <h3>Sales Club - Member</h3>
+                <p class="job-date">January 2024 - Present</p>
+                <ul>
+                    <li>Engage in meetings, learning diverse sales techniques, and networking with industry professionals.</li>
+                </ul>
+            </div>
+
+            <div class="activity">
+                <h3>Anchors Leadership Society - Member</h3>
+                <p class="job-date">August 2024 - Present</p>
+                <ul>
+                    <li>Attend regular meetings and engage in activities to learn how to become a better leader and inspire others.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Technical Skills</h4>
+                    <p>Microsoft Excel (Certified), PowerPoint, Word, Zoom, Relex, Teams, Power BI, Tableau, SAS, SQL, Python</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Languages</h4>
+                    <p>Fluent in Spanish</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Nicholas Nason. All rights reserved.</p>
+    </footer>
+</body>
+</html>
